@@ -484,6 +484,15 @@ a:focus {
   color: #ffffff;
 }
 
+.food_section .filters_menu li.active a {
+  background-color: #222831;
+  color: #ffffff;
+}
+
+.food_section .filters_menu li a {
+  color: #222831;
+}
+
 .food_section .box {
   position: relative;
   margin-top: 25px;
@@ -1311,5 +1320,14 @@ a:focus {
   .rent_solution_container .col-md-4.col-sm-6 {
     float: left;
     width: 50%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .Vue-Toastification__container.top-right .Vue-Toastification__toast--rtl,
+  .Vue-Toastification__container.bottom-right .Vue-Toastification__toast--rtl {
+    margin-right: unset !important;
+    margin-left: auto !important;
+    font-family: "Vazir", Arial, Helvetica, sans-serif !important;
   }
 }
