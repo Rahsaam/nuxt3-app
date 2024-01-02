@@ -1,7 +1,6 @@
-<template>
+<!-- <template>
         <div  class="sub_page">
         <div class="hero_area">
-            <!-- header section strats -->
             <header class="header_section">
                 <div class="container">
                     <nav class="navbar navbar-expand-lg custom_nav-container">
@@ -19,11 +18,11 @@
 
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mx-auto">
-                                <li class="nav-item active">
-                                    <NuxtLink class="nav-link" :class="{active: route.path = '/'}">صفحه اصلی</NuxtLink>
+                                <li class="nav-item">
+                                    <NuxtLink class="nav-link" :to="{name: 'index'}" :class="{active: route.path = '/'}">صفحه اصلی</NuxtLink>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="menu.html">منو</a>
+                                    <NuxtLink class="nav-link" :to="{name: 'menu'}" :class="{active: route.path = '/menu'}">منو صفحه</NuxtLink>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="about.html">درباره ما</a>
@@ -47,7 +46,6 @@
                     </nav>
                 </div>
             </header>
-            <!-- end header section -->
         </div>
     </div>
     <div>
@@ -61,4 +59,4 @@ const route = useRoute();
 
 <style lang="scss" scoped>
 
-</style>
+</style> -->

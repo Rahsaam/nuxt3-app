@@ -1,10 +1,11 @@
 <template>
     <section class="about_section layout_padding">
-        <div class="container">
+        <div class="container  ">
+
             <div class="row">
                 <div class="col-md-6 ">
                     <div class="img-box">
-                        <img src="/images/about-img.png" alt="">
+                        <img src="images/about-img.png" alt="">
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -32,7 +33,9 @@
 </template>
 
 <script setup>
-definePageMeta()
+definePageMeta({
+    layout: 'header'
+});
 </script>
 
 <style lang="scss" scoped>

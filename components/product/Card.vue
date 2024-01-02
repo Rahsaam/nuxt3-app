@@ -2,7 +2,8 @@
     <div class="box">
         <div>
             <div class="img-box">
-                <img :src="product.primary_image" alt="">
+                <!-- <img :src="product.primary_image" alt=""> -->
+                <img src="/images/preloader.png" v-img="product.primary_image" alt="">
             </div>
             <div class="detail-box">
                 <h5>

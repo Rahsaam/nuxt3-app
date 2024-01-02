@@ -30,7 +30,7 @@
 import {Tabs, Tab} from 'vue3-tabs-component';
 const runtimeConfig = useRuntimeConfig();
 const { apiUrl } = runtimeConfig.public;
-const {data: products} = await useFetch(`${apiUrl}/products/products-tabs`);
+const {data: products, loading} = await useFetch(`${apiUrl}/products/products-tabs`);
 
 console.log(products.value);
 </script>

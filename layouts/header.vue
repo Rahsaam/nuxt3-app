@@ -20,17 +20,17 @@
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mx-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">صفحه اصلی</a>
+                            <li class="nav-item" :class="{active: route.path === '/'}">
+                                <NuxtLink class="nav-link" :to="{name: 'index'}">صفحه اصلی</NuxtLink>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="menu.html">منو</a>
+                            <li class="nav-item" :class="{active: route.path === '/menu'}">
+                                <NuxtLink class="nav-link" :to="{name: 'menu'}">منو</NuxtLink>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">درباره ما</a>
+                            <li class="nav-item" :class="{active: route.path === '/about-us'}">
+                                <NuxtLink class="nav-link" :to="{name: 'about-us'}">درباره ما</NuxtLink>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">تماس باما</a>
+                            <li class="nav-item" :class="{active: route.path === '/contact'}">
+                                <NuxtLink class="nav-link" :to="{name: 'contact'}">تماس با ما</NuxtLink>
                             </li>
                         </ul>
                         <div class="user_option">
@@ -58,7 +58,7 @@
 </template>
 
 <script setup>
-
+const route = useRoute();
 </script>
 
 <style lang="scss" scoped>
