@@ -8,6 +8,7 @@ export default defineNuxtPlugin((nuxtApp) => {
 
         img.onload = function () {
             el.src = url.value;
+            el.classList.add('fade-in-animation');
         };
     });
 });

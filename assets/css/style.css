@@ -1331,3 +1331,17 @@ a:focus {
     font-family: "Vazir", Arial, Helvetica, sans-serif !important;
   }
 }
+
+
+.fade-in-animation {
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  } 
+  100% {
+    opacity: 100;
+  }
+}

@@ -5,13 +5,13 @@
         <ProductTabs/>
         <AboutUs/>
         <ContactUs/>
-        <Footer/>
     </div>
 </template>
 
 <script setup>
 definePageMeta({
-    layout: 'header'
+    layout: 'header',
+    middleware: 'auth'
 });
 </script>
 
