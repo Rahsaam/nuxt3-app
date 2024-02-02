@@ -32,7 +32,7 @@
 </template>
 
 <script setup>
-definePageMeta()
+
 </script>
 
 <style lang="scss" scoped>

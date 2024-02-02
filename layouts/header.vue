@@ -1,8 +1,7 @@
-<template>
+<!-- <template>
     <div>
     <div  class="sub_page">
     <div class="hero_area">
-        <!-- header section strats -->
         <header class="header_section">
             <div class="container">
                 <nav class="navbar navbar-expand-lg custom_nav-container">
@@ -51,7 +50,6 @@
                 </nav>
             </div>
         </header>
-        <!-- end header section -->
     </div>
 </div>
 <div>
@@ -67,4 +65,4 @@ const route = useRoute();
 
 <style lang="scss" scoped>
 
-</style>
+</style> -->

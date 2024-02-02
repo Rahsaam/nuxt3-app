@@ -35,7 +35,7 @@
                 <div class="col-md-4 footer-col">
                     <div class="footer_detail">
                         <a href="" class="footer-logo">
-                            webprog.io
+                            لورم ایپسوم
                         </a>
                         <p>
                             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.

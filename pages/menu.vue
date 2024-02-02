@@ -112,9 +112,6 @@
 </template>
 
 <script setup>
-definePageMeta({
-    layout: 'header'
-});
 const router = useRouter();
 const route = useRoute();
 const search = ref('');

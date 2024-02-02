@@ -5,7 +5,6 @@
 
 <script setup>
 definePageMeta({
-    layout: 'header',
     middleware: 'user'
 });
 const showCheckOtp = ref(false);

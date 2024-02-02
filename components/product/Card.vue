@@ -7,7 +7,7 @@
             </div>
             <div class="detail-box">
                 <h5>
-                    {{ product.name }}
+                    <NuxtLink :to="{name: 'products-slug', params: {slug: product.slug}}">{{ product.name }}</NuxtLink>
                 </h5>
                 <p>
                     {{ product.description }}
@@ -22,9 +22,9 @@
                         {{ priceFormat(product.price) }}
                         <span>تومان</span>
                     </h6>
-                    <a href="">
+                    <button @click="addToCart(product)">
                         <i class="bi bi-cart-fill text-white fs-5"></i>
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -35,6 +35,13 @@
 defineProps([
     'product'
 ]);
+import {useStateCart} from '../../store/counter';
+const cart = useStateCart();
+
+function addToCart (product) {
+    cart.remove(product.id);
+    cart.addToCart(product, 1);
+}
 </script>
 
 <style lang="scss" scoped>

@@ -28,7 +28,7 @@ function transformSlotProps (props) {
     Object.entries(props).forEach(([key, value]) => {
         formattedProps[key] = value < 10 ? `0${value}` : String(value);
     });
-
+    console.log(formattedProps);
     return formattedProps;
 }
 

@@ -18,6 +18,8 @@ export default defineNuxtConfig({
     },
     css: ['~/assets/css/style.css'],
 
+    modules: ['@formkit/nuxt', '@pinia/nuxt', '@pinia-plugin-persistedstate/nuxt',],
+
     build: {
         transpile: ['vue-toastification']
     },

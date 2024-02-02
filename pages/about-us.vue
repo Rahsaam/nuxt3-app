@@ -33,9 +33,7 @@
 </template>
 
 <script setup>
-definePageMeta({
-    layout: 'header'
-});
+
 </script>
 
 <style lang="scss" scoped>

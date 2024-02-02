@@ -33,9 +33,9 @@
 <script setup>
 
 import { useToast } from 'vue-toastification';
+const toast = useToast();
 const {authUser} = useAuth();
 const emit = defineEmits(['showCheckOtp']);
-const toast = useToast();
 const cellphone = ref('');
 const loading = ref(false);
 const errors = ref([]);
